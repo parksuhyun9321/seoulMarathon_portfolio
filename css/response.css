@@ -45,13 +45,13 @@
 }
 
 @media all and (max-width: 1400px) {
-  #section01 .txtBox h3 {
+  #section01 .infoBox dt {
     font-size: 4rem;
   }
-  #section01 .txtBox p {
+  #section01 .infoBox dd {
     font-size: 2.6rem;
   }
-  #section01 .txtBox .btns a {
+  #section01 .infoBox .btns a {
     padding: 10px 15px;
   }
   #footer .container {
@@ -185,7 +185,7 @@
   #header .resizeNavBtn {
     display: block;
   }
-  #section01 .txtBox {
+  #section01 .infoBox {
     left: 5%;
   }
   #outLine {
@@ -512,10 +512,10 @@
 }
 
 @media all and (max-width: 600px) {
-  #section01 .txtBox h3 {
+  #section01 .infoBox dt {
     font-size: 3.4rem;
   }
-  #section01 .txtBox p {
+  #section01 .infoBox dd {
     font-size: 2rem;
   }
   #section03 .storeShop .txtBox {
@@ -597,13 +597,13 @@
     background: url("../images/section01/main_area1_bg2.png") no-repeat bottom, url("../images/section01/main_area1_graphic.png") no-repeat left top;
     background-size: 100%, 150px;
   }
-  #section01 .txtBox h3 {
+  #section01 .infoBox dt {
     font-size: 2rem;
   }
-  #section01 .txtBox p {
+  #section01 .infoBox dd {
     font-size: 1.4rem;
   }
-  #section01 .txtBox .btns a {
+  #section01 .infoBox .btns a {
     font-size: 1.4rem;
   }
   #section02 .join a h3 {
@@ -623,6 +623,19 @@
   }
   #section03 .storeShop .txtBox p {
     font-size: 1.2rem;
+  }
+  #popupWarp .popup {
+    width: 80%;
+    height: 300px;
+  }
+  #popupWarp .popup .popupTxt dt {
+    line-height: 1.2;
+    font-size: 2rem;
+    word-break: keep-all;
+  }
+  #popupWarp .popup .popupTxt dd {
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
   #info .container .infoBox dd {
     font-size: 1.2rem;
