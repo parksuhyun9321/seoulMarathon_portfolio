@@ -1,0 +1,88 @@
+@import "_vars";
+
+#header {
+    position: relative;
+    background-color: $mainColor;
+    #gnb {
+        .gnbList {
+            > li {
+                background-color: $mainColor;
+                .depth02 {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+#notice {
+    color: #171717;
+    .container {
+        position: relative;
+        width: 1400px;
+        margin: 0 auto 150px;
+        h2 {
+            padding: 80px 0 50px;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        table {
+            width: 100%;
+            font-size: 1.6rem;
+            tbody {
+                tr {
+                    display: flex;
+                    padding: 15px 0;
+                    border-bottom: 1px solid #171717;
+                    transition: 0.25s ease;
+                    &:hover {
+                        color: $mainColor;
+                    }
+                    &:first-child {
+                        border-top: 3px solid #171717;
+                    }
+                    &.color {
+                        th {
+                            font-weight: 700;
+                            color: $mainColor;
+                        }
+                    }
+                    th {
+                        width: 10%;
+                        font-size: 1.8rem;
+                    }
+                    td {
+                        width: 10%;
+                        &.title {
+                            width: 70%;
+                            word-break: keep-all;
+                            a {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .noticeList {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            ul {
+                margin: 0 5px;
+                li {
+                    a {
+                        font-size: 1.8rem;
+                        pointer-events: none;
+                    }
+                }
+            }
+            button {
+                color: #787878;
+                cursor: pointer;
+            }
+        }
+    }
+}

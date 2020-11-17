@@ -1,0 +1,98 @@
+@import "_vars";
+
+#header {
+    position: relative;
+    background-color: $mainColor;
+    #gnb {
+        .gnbList {
+            > li {
+                background-color: $mainColor;
+                .depth02 {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+#appGuide {
+    color: #171717;
+    font-size: 1.8rem;
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            padding: 80px 0 50px;
+            border-bottom: 2px solid #171717;
+        }
+        div {
+            h3 {
+                margin: 30px 0 50px;
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: $mainColor;
+            }
+            &.txt {
+                padding-bottom: 50px;
+                border-bottom: 2px solid #171717;
+                dl {
+                    display: flex;
+                    line-height: 1.8;
+                    dt {
+                        width: 30%;
+                        margin-right: 100px;
+                    }
+                    dd {
+                        width: 70%;
+                        word-break: keep-all;
+                    }
+                }
+            }
+            &.eventCheck {
+                margin-bottom: 120px;
+                ol {
+                    li {
+                        &:last-child {
+                            padding: 10px 0;
+                            p {
+                                line-height: 1.2;
+                                word-break: keep-all;
+                                &:after {
+                                    content: "(참가 정보 가운데 기념품 사이즈, 연락처, 전자우편 항목은 접수 기간 내에 개인 신청자의 경우 본인이나 단체 대표자가 직접 수정할 수 있습니다. )";
+                                    display: block;
+                                    margin-left: 25px;
+                                }
+                            }
+                        }
+                        p {
+                            strong {
+                                color: $mainColor;
+                                font-weight: 700;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .btn {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: inline-block;
+                    margin: 50px 0;
+                    padding: 15px 50px;
+                    border: 1px solid #171717;
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    transition: 0.25s ease;
+                    &:hover {
+                        background-color: $mainColor;
+                        border-color: $mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

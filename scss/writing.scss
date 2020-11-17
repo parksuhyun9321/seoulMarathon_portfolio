@@ -1,0 +1,173 @@
+@import "_vars";
+
+#header {
+    position: relative;
+    background-color: $mainColor;
+    #gnb {
+        .gnbList {
+            > li {
+                background-color: $mainColor;
+                .depth02 {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+#writing {
+    color: #171717;
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        .checkBox {
+            text-align: center;
+            font-size: 1.8rem;
+            label {
+                input {
+                    width: 20px;
+                    height: 20px;
+                    &[type="checkBox"]{
+                        display: none;
+                        &:checked + i,span {
+                            color: $mainColor;
+                        }
+                    }
+                }
+                i {
+                    font-size: 3rem;
+                }
+            }
+        }
+        .personalInfo {
+            padding-bottom: 80px;
+            border-bottom: 2px solid #171717;
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                padding: 80px 0 50px;
+                border-bottom: 2px solid #171717;
+            }
+            .title {
+                margin-bottom:30px;
+                dt {
+                    margin: 40px 0;
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                dd {
+                    line-height: 1.5;
+                    font-size: 1.6rem;
+                    word-break: keep-all;
+                }
+            }
+            .infoTxt {
+                margin: 30px 0;
+                h3 {
+                    display: block;
+                    padding: 15px 0;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    background-color: #f9f9f9;
+                    border: 1px solid #e5e5e5;
+                }
+                dl {
+                    display: flex;
+                    width: 100%;
+                    line-height: 1.4;
+                    padding: 15px 20px;
+                    font-size: 1.6rem;  
+                    border: 1px solid #e5e5e5;  
+                    border-top: none;        
+                    dt {
+                        width: 10%;
+                        word-break: keep-all;
+                    }
+                    dd {
+                        margin-left: 50px;
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+        form {
+            .userInfo {
+                dl {
+                    display: flex;
+                    height: 60px;
+                    line-height: 60px;
+                    border-bottom: 1px solid #e5e5e5;
+                    &:first-child{
+                        dd {
+                            label {
+                                input{
+                                    width: 800px;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        dd {
+                            label {
+                                span {
+                                    color: #797373;
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                    dt {
+                        width: 10%;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+                    dd {
+                        label {
+                            input {
+                                width: 500px;
+                                height: 40px;
+                                font-size: 2rem;
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .checkBox {
+                margin: 15px 0;
+                text-align: left;
+            }
+            .writingBox {
+                    width: 90%;
+                    margin: 0 auto;
+                textarea {
+                    width: 100%;
+                    height: 600px;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    resize: none;
+                    outline: none;
+                }
+            }
+            .btns {
+                text-align: center;
+                margin: 50px 0;
+                a {
+                    display: inline-block;
+                    padding: 20px 100px;
+                    margin: 0 20px;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    border: 1px solid #171717;
+                    transition: 0.25s ease;
+                    &:hover {
+                        background-color: $mainColor;
+                        border-color: $mainColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

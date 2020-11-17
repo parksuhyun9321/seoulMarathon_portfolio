@@ -1,0 +1,113 @@
+@import "_vars";
+
+#header {
+    position: relative;
+    background-color: $mainColor;
+    #gnb {
+        .gnbList {
+            > li {
+                background-color: $mainColor;
+                .depth02 {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+#board {
+    color: #171717;
+    .container {
+        position: relative;
+        width: 1400px;
+        margin: 0 auto 180px;
+        h2 {
+            padding: 80px 0 50px;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        .tabList {
+            li {
+                display: none;
+                &.on {
+                    display: block;
+                }
+                table {
+                    width: 100%;
+                    font-size: 1.8rem;
+                    tbody {
+                        tr {
+                            display: flex;
+                            padding: 15px 0;
+                            border-bottom: 1px solid #171717;
+                            &.color {
+                                th {
+                                    color: $mainColor;
+                                }
+                            }
+                            th {
+                                font-weight: 700;
+                                width: 10%;
+                                text-align: center;
+                            }
+                            td {
+                                width: 10%;
+                                &.title {
+                                    width: 70%;
+                                    padding-left: 50px;
+                                    word-break: keep-all;
+                                    .answer {
+                                        background-color: $mainColor;
+                                        color: #fff;
+                                        padding: 4px 15px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                                a {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tabBtns {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+            font-weight: 700;
+            ol {
+                display: flex;
+                font-size: 1.8rem;
+                li {
+                    &.on {
+                        color: #171717;
+                    }
+                    margin: 0 5px;
+                    color: #787878;
+                }
+            }
+            button {
+                color: #787878;
+                cursor: pointer;
+            }
+        }
+        .btnTxt {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 20px 80px;
+            border: 1px solid #171717;
+            transition: 0.25s ease;
+            &:hover {
+                background-color: $mainColor;
+                border-color: $mainColor;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "_vars";
+#header {
+    top: 0;
+    background-color: $mainColor;
+    #gnb {
+        .gnbList {
+            > li {
+                background-color: $mainColor;
+                .depth02 {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+#outLine {
+    padding: 250px 0;
+    background: url("../images/outline/bg.png") no-repeat right bottom;
+    table {
+        width: 600px;
+        margin-left: 15%;
+        color: #171717;
+        font-size: 2rem;
+        text-align: left;
+        &:before {
+            content: "대회개요";
+            display: block;
+            font-size: 3.6rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        tr {
+            line-height: 3;
+            border-bottom: 1px solid #17171750;
+            th {
+                display: block;
+                font-weight: 700;
+                margin-right: 110px;
+            }
+            td {
+                font-weight: 300;
+            }
+        }
+    }
+}

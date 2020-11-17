@@ -1,0 +1,150 @@
+@import "_vars";
+
+#header {
+    position: relative;
+    background-color: $mainColor;
+    #gnb {
+        .gnbList {
+            > li {
+                background-color: $mainColor;
+                .depth02 {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+#appCheck {
+    color: #171717;
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        h2 {
+            padding: 80px 0 50px;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        h3 {
+            margin: 20px 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .socialSns {
+            margin-bottom: 50px;
+            dl {
+                border: 1px solid #e2e2e2;
+                dt {
+                    padding: 20px;
+                    background-color: #f9f9f9;
+                    border-bottom: 1px solid #e2e2e2;
+                    word-break: keep-all;
+                    ul {
+                        li {
+                            margin: 15px 0;
+                            &:last-child {
+                                p {
+                                    color: #ff6400;
+                                }
+                            }
+                            p {
+                                position: relative;
+                                font-size: 1.6rem;
+                                padding-left: 15px;
+                                word-break: keep-all;
+                                &:before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
+                                    display: block;
+                                    width: 5px;
+                                    height: 5px;
+                                    background-color: #171717;
+                                    border-radius: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+                dd {
+                    ul {
+                        display: flex;
+                        width: 40%;
+                        margin: 30px auto;
+                        justify-content: space-between;
+                        li {
+                            a {
+                                display: block;
+                                .imgBox {
+                                    img {
+                                        width: 100%;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        form {
+            margin-bottom: 90px;
+            font-weight: 700;
+            dl {
+                display: flex;
+                font-size: 1.6rem;  
+                &:last-child {
+                    dt {
+                        border-bottom: 1px solid #e5e5e5;
+                    }
+                    dd {
+                        border-bottom: 1px solid #e5e5e5;
+                        &:after {
+                            content: "※ 조회가 안되실 경우, 비밀번호 찾기를 통해 임시 비밀번호를 발급받아 조회하여 주시기 바랍니다.";
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 1.2rem;
+                            color: #f00;
+                            word-break: keep-all;
+                        }
+                    }
+                }
+                dt {
+                    width: 15%;
+                    padding: 25px 0 20px 10px;
+                    background-color: #f9f9f9;
+                    border-top: 1px solid #e5e5e5;
+                    border-left: 1px solid #e5e5e5;
+                }
+                dd {
+                    width: 85%;
+                    padding: 20px 0 20px 10px;
+                    border-top: 1px solid #e5e5e5;
+                    border-left: 1px solid #e5e5e5;
+                    label {
+                        input {
+                            height: 30px;
+                            font-size: 1.6rem;
+                            outline: none;
+                        }
+                        select {
+                            width: 100px;
+                            height: 30px;
+                            font-size: 1.6rem;
+                        }
+                        span {
+                            font-size: 1.2rem;
+                            &.btn {
+                                padding: 7px;
+                                color: #fff;
+                                background-color: #868e96;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

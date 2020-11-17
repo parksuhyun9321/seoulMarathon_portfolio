@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="포트폴리오용으로 제작한 사이트 입니다">
+    <meta name="Location" content="Seoul Korea">
+    <meta name="Author" content="박수현">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/writing.css">
+    <link rel="stylesheet" href="../css/response.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/sub.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="logo">
+            <a href="../html/index.html">
+                <span>2020 LIFEPLUS JTBC SEOUL <br>MARATHON</span>
+            </a>
+        </h1>
+        <nav id="gnb">
+            <ul class="gnbList">
+                <li>
+                    <a href="#" class="depth01">대회소개</a>
+                    <ul class="depth02">
+                        <li><a href="../html/info.html">LIFEPLUS <br>JTBC <br>서울마라톤</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="depth01">대회안내</a>
+                    <ul class="depth02">
+                        <li><a href="../html/outline.html">대회개요</a></li>
+                        <li><a href="../html/joininfo.html">참가방법</a></li>
+                        <li><a href="../html/souvenir.html">기념품</a></li>
+                        <li><a href="../html/note.html">유의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="depth01">참가신청</a>
+                    <ul class="depth02">
+                        <li><a href="../html/appguide.html">신청안내</a></li>
+                        <li><a href="../html/application.html">참가신청</a></li>
+                        <li><a href="../html/appcheck.html">신청확인</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="depth01">커뮤니티</a>
+                    <ul class="depth02">
+                        <li><a href="../html/notice.html">공지사항</a></li>
+                        <li><a href="../html/board.html">문의 게시판</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button class="resizeNavBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main id="main">
+        <section id="writing">
+            <h2 class="hidden">글쓰기</h2>
+            <article class="container">
+                <div class="personalInfo">
+                    <h2>문의 게시판</h2>
+                    <dl class="title">
+                        <dt>개인정보 수집 및 이용 동의서</dt>
+                        <dd>
+                            2020 LIFEPLUS JTBC 서울 마라톤은 개인정보 수집 및 이용 동의서 고객님의 개인정보를 중요시하며, 「정보통신망 이용촉진 및 정보보호」 에 관한 법률을
+                            준수하고 있습니다.
+                        </dd>
+                        <dd>
+                            개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보를 위한 어떠한 조치가 취해지고 있는지 아래와 같이
+                            알려드립니다
+                        </dd>
+                        <dd>
+                            또한 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+                        </dd>
+                        <dd>
+                            ※ 본 방침은 :2015 년 01 월 21 일 부터 시행됩니다.
+                        </dd>
+                    </dl>
+                    <div class="infoTxt">
+                        <h3>개인 정보의 수집 동의</h3>
+                        <dl>
+                            <dt>수집항목</dt>
+                            <dd>이름,비밀번호,이메일,홈페이지 주소,작성글</dd>
+                        </dl>
+                        <dl>
+                            <dt>수집ㆍ이용목적</dt>
+                            <dd>2020 LIFEPLUS JTBC 서울 마라톤은 수집한 개인정보를 다음의 목적을 위해 활용합니다. 게시물 관리 및 답변에 활용</dd>
+                        </dl>
+                    </div>
+                    <div class="infoTxt">
+                        <h3>개인 정보의 보유 및 이용기간</h3>
+                        <dl>
+                            <dt>파기 절차</dt>
+                            <dd>수집된 개인정보는 게시물 관리와 통보를 위한 목적으로만 사용되며, 관련 담당자를 제외하고는 함부로 열람할 수 없으며, 수집된 개인정보는 해당 게시물 삭제 시
+                                즉시 파기됩니다.</dd>
+                        </dl>
+                    </div>
+                    <div class="checkBox">
+                        <label>
+                            <input type="checkbox" name="개인정보 수집 및 이용 동의">
+                            <i class="xi-check-circle-o"></i>
+                            <span>위 조건에 따른 개인정보 수집 및 이용에 동의</span>
+                        </label>
+                    </div>
+                </div>
+                <form>
+                    <div class="userInfo">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>
+                                <label>
+                                    <input type="text">
+                                </label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>
+                                <label>
+                                    <input type="text">
+                                </label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀 번호</dt>
+                            <dd>
+                                <label>
+                                    <input type="text">
+                                    <span>글 수정, 삭제 시 필요한 항목입니다.</span>
+                                </label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>
+                                <label>
+                                    <input type="text">
+                                </label>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="checkBox">
+                        <label>
+                            <input type="checkbox" name="개인정보 수집 및 이용 동의">
+                            <i class="xi-check-circle-o"></i>
+                            <span>위 조건에 따른 개인정보 수집 및 이용에 동의</span>
+                        </label>
+                    </div>
+                    <div class="writingBox">
+                        <textarea></textarea>
+                    </div>
+                    <div class="btns">
+                        <a href="../html/board.html">취소</a>
+                        <a href="">글쓰기</a>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <article class="container">
+            <h2 class="hidden">container</h2>
+            <div class="spon">
+                <dl>
+                    <dt>주최</dt>
+                    <dd>
+                        <a href="">
+                            <img src="../images/footer/spon1.png" alt="주최 : JTBC">
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>타이틀 후원</dt>
+                    <dd>
+                        <a href="">
+                            <img src="../images/footer/titleSpon01.png"
+                                alt="LIFEPLUS, 한화생명 한화손해보험 한화투자증권 한화자산운용 한화저축은행">
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>협찬</dt>
+                    <dd>
+                        <a href="">
+                            <img src="../images/footer/spon2.png" alt="NIKE">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <address class="address">
+                <dl class="add01">
+                    <dt>제이티비씨 주식회사</dt>
+                    <dd>서울특별시 마포구 상암산로 38(상암동)</dd>
+                    <dd>대표자명 : 홍정도, 손석희, 김용달</dd>
+                </dl>
+                <dl class="add02">
+                    <dt>조인스중앙 주식회사 (사무국)</dt>
+                    <dd>서울특별시 마포구 상암산로 48-6(상암동)</dd>
+                    <dd>대표전화 : 02-2031-1924</dd>
+                    <dd>팩스 : 02-2031-1699</dd>
+                    <dd>이메일 : marathon@jtbc.co.kr</dd>
+                </dl>
+                <dl class="add03">
+                    <dt>사업자번호 : 104-81-82884</dt>
+                    <dd>통신판매업신고번호 : 2016-서울중구-1143</dd>
+                    <dd><a href="">카카오톡 1:1 채팅 상담</a></dd>
+                </dl>
+                <p class="copy">Copyright 2020 JTBC All Rights Reserved</p>
+            </address>
+            <ul class="sns">
+                <li>
+                    <a href="">
+                        <img src="../images/footer/sns_kakaoTalk.png" alt="카카오톡">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../images/footer/sns_instar.png" alt="인스타그램">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../images/footer/sns_facebook.png" alt="페이스북">
+                    </a>
+                </li>
+            </ul>
+            <a href="" class="policy">개인정보처리방침</a>
+        </article>
+    </footer>
+    <script>
+        $(".btns a:nth-child(2)").on("click",function(){
+            alert("신입 웹퍼블리셔 박수현 입니다.");
+        })
+    </script>
+</body>
+
+</html>
