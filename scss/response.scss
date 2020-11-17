@@ -69,11 +69,11 @@
 
 @media all and (max-width: 1400px) {
     #section01 {
-        .txtBox {
-            h3 {
+        .infoBox {
+            dt {
                 font-size: 4rem;
             }
-            p {
+            dd {
                 font-size: 2.6rem;
             }
             .btns {
@@ -252,7 +252,7 @@
         }
     }
     #section01 {
-        .txtBox {
+        .infoBox {
             left: 5%;
         }
     }
@@ -824,11 +824,11 @@
 
 @media all and (max-width: 600px) {
     #section01 {
-        .txtBox {
-            h3 {
+        .infoBox {
+            dt {
                 font-size: 3.4rem;
             }
-            p {
+            dd {
                 font-size: 2rem;
             }
         }
@@ -952,11 +952,11 @@
                     top;
             background-size: 100%, 150px;
         }
-        .txtBox {
-            h3 {
+        .infoBox {
+            dt {
                 font-size: 2rem;
             }
-            p {
+            dd {
                 font-size: 1.4rem;
             }
             .btns {
@@ -994,6 +994,23 @@
                 }
                 p {
                     font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    #popupWarp {
+        .popup {
+            width: 80%;
+            height: 300px;
+            .popupTxt {
+                dt {
+                    line-height: 1.2;
+                    font-size: 2rem;
+                    word-break: keep-all;
+                }
+                dd {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
                 }
             }
         }
