@@ -1,5 +1,16 @@
 $(".popup").slideDown(400);
 
+function none(){
+    if($.cookie("oneday")=="none"){
+        $("#popupWarp").hide();
+    }
+}
+
+$("#popupWarp .btnOneday").on("click",function(){
+    $.cookie("oneday","none",{expires:1, path:"/"});
+    $("#popupWarp").hide();
+});
+
 $(".popup .btnClose").on("click",function(){
     $("#popupWarp").hide();
 });
@@ -9,7 +20,7 @@ $(".popup .btnClose").on("click",function(){
 new fullpage("#main",{
     onLeave:function(section,destination){
         let idx = destination.index;
-        if(idx === 0){
+        if(idx===0){
             anim01.restart();
         }
         if(idx===2){
