@@ -221,12 +221,15 @@
         .popupFooter {
             text-align: right;
             button {
-                padding: 5px;
+                padding: 5px 10px;
                 background-color: #fff;
                 font-weight: 700;
                 color: #000;
                 border-radius: 5px;
                 cursor: pointer;
+                &.btnClose {
+                    margin-left: 15px;
+                }
             }
         }
     }
