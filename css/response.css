@@ -625,8 +625,7 @@
     font-size: 1.2rem;
   }
   #popupWarp .popup {
-    width: 80%;
-    height: 300px;
+    width: 90%;
   }
   #popupWarp .popup .popupTxt dt {
     line-height: 1.2;
@@ -636,6 +635,13 @@
   #popupWarp .popup .popupTxt dd {
     font-size: 1.2rem;
     line-height: 1.5;
+  }
+  #popupWarp .popup .popupFooter button {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  #popupWarp .popup .popupFooter button.btnClose {
+    margin-left: 8px;
   }
   #info .container .infoBox dd {
     font-size: 1.2rem;
