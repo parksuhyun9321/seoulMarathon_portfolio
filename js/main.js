@@ -1,18 +1,18 @@
 $(".popup").slideDown(400);
 
-function none(){
+$(function(){
     if($.cookie("oneday")=="none"){
         $("#popupWarp").hide();
     }
-}
+});
 
 $("#popupWarp .btnOneday").on("click",function(){
     $.cookie("oneday","none",{expires:1, path:"/"});
-    $("#popupWarp").hide();
+    $("#popupWarp").hide(250);
 });
 
 $(".popup .btnClose").on("click",function(){
-    $("#popupWarp").hide();
+    $("#popupWarp").hide(250);
 });
 
 // popup
