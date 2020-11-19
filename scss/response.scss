@@ -1000,8 +1000,7 @@
     }
     #popupWarp {
         .popup {
-            width: 80%;
-            height: 300px;
+            width: 90%;
             .popupTxt {
                 dt {
                     line-height: 1.2;
@@ -1011,6 +1010,15 @@
                 dd {
                     font-size: 1.2rem;
                     line-height: 1.5;
+                }
+            }
+            .popupFooter {
+                button {
+                    padding: 5px;
+                    font-size: 1.2rem;
+                    &.btnClose {
+                        margin-left: 8px;
+                    }
                 }
             }
         }
